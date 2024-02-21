@@ -1,0 +1,114 @@
+CRITICAL - 2024-02-15 13:20:35 --> ErrorException: Undefined variable $rubricators
+in ROOTPATH\modules\Inspections\Views\form.php on line 32.
+ 1 ROOTPATH\modules\Inspections\Views\form.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\OSPanel\\domains\\testfregat2\\modules\\Inspections\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 5 ROOTPATH\modules\Inspections\Controllers\Inspections_links.php(25): view()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections_links->add_link()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 13:20:36 --> ErrorException: Undefined variable $rubricators
+in ROOTPATH\modules\Inspections\Views\form.php on line 32.
+ 1 ROOTPATH\modules\Inspections\Views\form.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\OSPanel\\domains\\testfregat2\\modules\\Inspections\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 5 ROOTPATH\modules\Inspections\Controllers\Inspections_links.php(25): view()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections_links->add_link()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 13:20:36 --> ErrorException: Undefined variable $rubricators
+in ROOTPATH\modules\Inspections\Views\form.php on line 32.
+ 1 ROOTPATH\modules\Inspections\Views\form.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\OSPanel\\domains\\testfregat2\\modules\\Inspections\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 5 ROOTPATH\modules\Inspections\Controllers\Inspections_links.php(25): view()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections_links->add_link()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 13:23:23 --> ErrorException: Undefined variable $rubricators
+in ROOTPATH\modules\Inspections\Views\form.php on line 32.
+ 1 ROOTPATH\modules\Inspections\Views\form.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\OSPanel\\domains\\testfregat2\\modules\\Inspections\\Views\\form.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 5 ROOTPATH\modules\Inspections\Controllers\Inspections_links.php(25): view()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections_links->add_link()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:52:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:53:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:54:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(89): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:56:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:57:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:57:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 15:57:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "spinner.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(46): view()
+ 4 ROOTPATH\modules\Inspections\Controllers\Inspections.php(90): Modules\Inspections\Controllers\Inspections->get_form()
+ 5 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

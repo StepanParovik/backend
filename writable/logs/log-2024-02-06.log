@@ -1,0 +1,20 @@
+CRITICAL - 2024-02-06 16:36:42 --> ErrorException: Undefined variable $pager_links
+in ROOTPATH\modules\Small_business\Views\table.php on line 49.
+ 1 ROOTPATH\modules\Small_business\Views\table.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\OSPanel\\domains\\testfregat2\\modules\\Small_business\\Views\\table.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(44): view()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->get_table()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 16:43:28 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 122.
+ 1 SYSTEMPATH\Pager\Pager.php(122): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate()
+ 2 SYSTEMPATH\Pager\Pager.php(112): CodeIgniter\Pager\Pager->displayLinks()
+ 3 ROOTPATH\modules\Small_business\Controllers\Small_business.php(36): CodeIgniter\Pager\Pager->makeLinks()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

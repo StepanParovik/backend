@@ -1,0 +1,99 @@
+CRITICAL - 2024-02-16 11:30:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Templates\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:30:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:31:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:32:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:32:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:32:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:32:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:33:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:33:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_body.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(60): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:37:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(63): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 11:37:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules\Inspections\Views\table_main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 3 ROOTPATH\modules\Inspections\Controllers\Inspections.php(63): view()
+ 4 SYSTEMPATH\CodeIgniter.php(941): Modules\Inspections\Controllers\Inspections->get_table()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

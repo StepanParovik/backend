@@ -1,0 +1,36 @@
+
+
+.table{
+    margin-top: 10px;
+    --bs-gutter-x: 0px;
+}
+.col-md {
+    display: flex;
+    justify-content: right;
+}
+
+.search {
+    align-self: center;
+}
+
+#spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* полупрозрачный фон */
+}
+
+.row {
+    --bs-gutter-x: 0px
+}
+
+.col-md {
+    padding-right: 10px;
+}

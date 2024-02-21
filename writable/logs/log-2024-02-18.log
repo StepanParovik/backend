@@ -1,0 +1,441 @@
+ERROR - 2024-02-18 09:27:54 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:27:54 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:27:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:27:54 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:27:55 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:27:55 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:27:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:27:55 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:28:56 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:28:58 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:28:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:28:58 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ...ntity&quot; SET &quot;subject_name&quot; = 'ИП &quot;ТаДаЯ&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:34:31 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:34:32 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:34:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:34:32 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:34:58 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:34:58 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:34:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:34:58 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:36:16 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:37:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:37:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:37:33 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-18 09:37:33 --> ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^ in C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\OSPanel\domains\testfregat2\system\Database\Postgre\Connection.php(187): pg_query()
+#2 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\OSPanel\domains\testfregat2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\OSPanel\domains\testfregat2\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#5 C:\OSPanel\domains\testfregat2\system\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\OSPanel\domains\testfregat2\system\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#7 C:\OSPanel\domains\testfregat2\system\Model.php(807): CodeIgniter\BaseModel->update()
+#8 C:\OSPanel\domains\testfregat2\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+#9 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+#10 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 C:\OSPanel\domains\testfregat2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\OSPanel\domains\testfregat2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-18 09:37:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 5 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 6 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:37:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 192.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 7 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+ 8 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-18 09:37:33 --> [Caused by] ErrorException: pg_query(): Query failed: ОШИБКА:  значение &quot;8293841034&quot; вне диапазона для типа integer
+LINE 1: ... SET &quot;subject_name&quot; =  E'ИП \\&quot;ТаДаЯ\\&quot;', &quot;inn&quot; = '829384103...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query()
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH\Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 8 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update()
+ 9 ROOTPATH\modules\Small_business\Controllers\Small_business.php(95): CodeIgniter\Model->update()
+10 SYSTEMPATH\CodeIgniter.php(941): Modules\Small_business\Controllers\Small_business->save_form()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
