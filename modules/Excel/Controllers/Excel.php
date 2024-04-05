@@ -67,7 +67,7 @@ class Excel extends Controller{
     }
 
     /**
-     * Импорт данных в реестр Inspection
+     * Импорт данных в реестр Heroes
      *
      * @return array
      */

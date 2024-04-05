@@ -1,5 +1,5 @@
 <?php
-namespace Modules\Inspections\Models;
+namespace Modules\Heroes\Models;
 use CodeIgniter\Model;
 
 
@@ -9,9 +9,9 @@ use CodeIgniter\Model;
  * @author parovik
  * @copyright (C) 2024 Parovik S.A.
  */
-class M_inspections extends Model{
+class M_Heroes extends Model{
 
-    protected $table = 'inspections';
+    protected $table = 'heroes';
     protected $primaryKey = 'id'; // Первичный ключ
     protected $allowedFields = ['control_body', 'period_start', 'period_end', 'planned_duration']; // Разрешенные поля для обновления
 
@@ -40,9 +40,9 @@ class M_inspections extends Model{
      */
     public function get_all()
     {
-        $query = $this->db->table('inspections i')
+        $query = $this->db->table('heroes i')
             ->join('rubricators r', 'r.id = i.control_body', 'left')
-            ->join('link_inspections_smallbusines lis', 'lis.inspections_id = i.id', 'left')
+            ->join('link_heroes_smallbusines lis', 'lis.heroes_id = i.id', 'left')
             ->join('small_business_entity sbe', 'sbe.id = lis.small_business_entity_id', 'left')
             ->where('i.is_del', false)
             ->select('i.id, i.create_date, sbe.subject_name, r.name, i.period_start, i.period_end, i.planned_duration')
@@ -53,9 +53,9 @@ class M_inspections extends Model{
 
     public function get_edit($uuid)
     {
-        $query = $this->db->table('inspections i')
+        $query = $this->db->table('heroes i')
             ->join('rubricators r', 'r.id = i.control_body', 'left')
-            ->join('link_inspections_smallbusines lis', 'lis.inspections_id = i.id', 'left')
+            ->join('link_heroes_smallbusines lis', 'lis.heroes_id = i.id', 'left')
             ->join('small_business_entity sbe', 'sbe.id = lis.small_business_entity_id', 'left')
             ->where('i.is_del', false)
             ->where('i.id', $uuid)
@@ -69,18 +69,18 @@ class M_inspections extends Model{
     public function getPagination(?int $perPage = null, int $page = null, int $total = null, array $search = null): array
     {
         $this->builder()
-            ->join('rubricators r', 'r.id = inspections.control_body', 'left')
-            ->join('link_inspections_smallbusines lis', 'lis.inspections_id = inspections.id', 'left')
+            ->join('rubricators r', 'r.id = heroes.control_body', 'left')
+            ->join('link_heroes_smallbusines lis', 'lis.heroes_id = heroes.id', 'left')
             ->join('small_business_entity sbe', 'sbe.id = lis.small_business_entity_id', 'left')
-            ->where('inspections.is_del', false)
-            ->select('inspections.id, inspections.create_date, sbe.subject_name, r.name, inspections.period_start, inspections.period_end, inspections.planned_duration');
+            ->where('heroes.is_del', false)
+            ->select('heroes.id, heroes.create_date, sbe.subject_name, r.name, heroes.period_start, heroes.period_end, heroes.planned_duration');
 
         if (!empty($search)) {
             if ($search['period_start'] !== '') {
-                $this->builder->where('inspections.period_start >=', $search['period_start']);
+                $this->builder->where('heroes.period_start >=', $search['period_start']);
             }
             if ($search['period_end'] !== '') {
-                $this->builder->where('inspections.period_end <=', $search['period_end']);
+                $this->builder->where('heroes.period_end <=', $search['period_end']);
             }
             if ($search['subject_name'] !== '') {
                 $this->builder->like('sbe.subject_name', $search['subject_name']);

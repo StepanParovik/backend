@@ -21,17 +21,17 @@ $routes->group('user', ['namespace' => 'Modules\User\Controllers'], function ($r
     $routes->get('create', 'User::index',['filter' => 'authGuard']);
     $routes->match(['get', 'post'], 'validate_data', 'User::validate_data',['filter' => 'authGuard']);
 });
-$routes->group('inspections', ['namespace' => 'Modules\Inspections\Controllers'], function ($routes) {
-    $routes->match(['get', 'post'],'/', 'Inspections::load_table',['filter' => 'authGuard']);
-    $routes->match(['get', 'post'],'search', 'Inspections::table_search',['filter' => 'authGuard']);
-    $routes->match(['get', 'post'],'create', 'Inspections::get_form',['filter' => 'authGuard']);
-    $routes->match(['get', 'post'], 'save', 'Inspections::save_form',['filter' => 'authGuard']);
-    $routes->match(['get', 'post'], 'link', 'Inspections::link_small_business',['filter' => 'authGuard']);
-    $routes->get('exportToExcel', 'Inspections::exportToExcel',['filter' => 'authGuard']);
-    $routes->get('edit/(:any)', 'Inspections::edit/$1',['filter' => 'authGuard']);
-    $routes->post('import', 'Inspections::importFromExcel',['filter' => 'authGuard']);
-    $routes->get('link/add/(:any)/(:any)', 'Inspections_links::add_link/$1/$2',['filter' => 'authGuard']);
-    $routes->get('delete/(:any)', 'Inspections::delete_record/$1',['filter' => 'authGuard']);
+$routes->group('heroes', ['namespace' => 'Modules\Heroes\Controllers'], function ($routes) {
+    $routes->match(['get', 'post'],'/', 'Heroes::load_table',['filter' => 'authGuard']);
+    $routes->match(['get', 'post'],'search', 'Heroes::table_search',['filter' => 'authGuard']);
+    $routes->match(['get', 'post'],'create', 'Heroes::get_form',['filter' => 'authGuard']);
+    $routes->match(['get', 'post'], 'save', 'Heroes::save_form',['filter' => 'authGuard']);
+    $routes->match(['get', 'post'], 'link', 'Heroes::link_small_business',['filter' => 'authGuard']);
+    $routes->get('exportToExcel', 'Heroes::exportToExcel',['filter' => 'authGuard']);
+    $routes->get('edit/(:any)', 'Heroes::edit/$1',['filter' => 'authGuard']);
+    $routes->post('import', 'Heroes::importFromExcel',['filter' => 'authGuard']);
+    $routes->get('link/add/(:any)/(:any)', 'Heroes::add_link/$1/$2',['filter' => 'authGuard']);
+    $routes->get('delete/(:any)', 'Heroes::delete_record/$1',['filter' => 'authGuard']);
 });
 
 $routes->group('small_business', ['namespace' => 'Modules\Small_business\Controllers'], function ($routes) {

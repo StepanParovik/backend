@@ -49,7 +49,7 @@ class Autoload extends AutoloadConfig
         'Modules\Auth' => ROOTPATH . 'modules\Auth',
         'Modules\User' => ROOTPATH . 'modules\User',
         'Modules\Templates' => ROOTPATH . 'modules\Templates',
-        'Modules\Inspections' => ROOTPATH . 'modules\Inspections',
+        'Modules\Heroes' => ROOTPATH . 'modules\Heroes',
         'Modules\File' => ROOTPATH . 'modules\File',
         'Modules\Rubricators' => ROOTPATH . 'modules\Rubricators',
         'Modules\Small_business' => ROOTPATH . 'modules\Small_business',

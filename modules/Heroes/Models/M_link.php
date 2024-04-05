@@ -1,5 +1,5 @@
 <?php
-namespace Modules\Inspections\Models;
+namespace Modules\Heroes\Models;
 use CodeIgniter\Model;
 use Modules\Small_business\Models\M_Small_business;
 
@@ -9,11 +9,11 @@ use Modules\Small_business\Models\M_Small_business;
  * @author parovik
  * @copyright (C) 2024 Parovik S.A.
  */
-class M_link_smallbusiness extends Model{
+class M_link_ extends Model{
 
-    protected $table = 'link_inspections_smallbusines';
+    protected $table = 'link_heroes_smallbusines';
     protected $primaryKey = 'id'; // Первичный ключ
-    protected $allowedFields = ['inspections_id','small_business_entity_id']; // Разрешенные поля для обновления
+    protected $allowedFields = ['heroes_id','small_business_entity_id']; // Разрешенные поля для обновления
 
     /**
      * Сохранение

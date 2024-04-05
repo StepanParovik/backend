@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Inspections\Config;
+namespace Modules\heroes\Config;
 
 use CodeIgniter\Config\BaseConfig;
 

@@ -26,7 +26,7 @@ class Small_business extends BaseController{
      * @param $link
      * @return string
      */
-    public function get_table($inspections_id = null){
+    public function get_table($heroes_id = null){
         $M_Small_business = new M_Small_business();
         $page    = (int) ($this->request->getGet('page') ?? 1);
         $perPage = 10;
@@ -34,9 +34,9 @@ class Small_business extends BaseController{
         // Получение данных для текущей страницы
         $data['data'] = $M_Small_business->paginate($perPage, 'group1', $page);
         $data['pager'] = $M_Small_business->pager->makeLinks($page, $perPage, $total);
-        $data['inspections_id'] = $inspections_id;
+        $data['heroes_id'] = $heroes_id;
 
-        if(!is_null($inspections_id)){
+        if(!is_null($heroes_id)){
             return view ('Modules\Small_business\Views\table', $data);
         }else{
             return view('Modules\Templates\Views\menu')
