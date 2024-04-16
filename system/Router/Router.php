@@ -163,7 +163,7 @@ class Router implements RouterInterface
      *
      * @param string|null $uri URI path relative to baseURL
      *
-     * @return Closure|string Controller classname or Closure
+     * @return Closure|string Controllers classname or Closure
      *
      * @throws PageNotFoundException
      * @throws RedirectException
@@ -237,7 +237,7 @@ class Router implements RouterInterface
     /**
      * Returns the name of the matched controller.
      *
-     * @return Closure|string Controller classname or Closure
+     * @return Closure|string Controllers classname or Closure
      */
     public function controllerName()
     {
@@ -269,7 +269,7 @@ class Router implements RouterInterface
             $routeArray = explode('::', $route);
 
             return [
-                $routeArray[0], // Controller
+                $routeArray[0], // Controllers
                 $routeArray[1] ?? 'index',   // Method
             ];
         }

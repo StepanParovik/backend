@@ -80,7 +80,7 @@ class ControllerGenerator extends BaseCommand
      */
     public function run(array $params)
     {
-        $this->component = 'Controller';
+        $this->component = 'Controllers';
         $this->directory = 'Controllers';
         $this->template  = 'controller.tpl.php';
 

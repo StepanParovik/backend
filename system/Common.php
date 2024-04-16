@@ -854,7 +854,7 @@ if (! function_exists('redirect')) {
      *
      * If more control is needed, you must use $response->redirect explicitly.
      *
-     * @param non-empty-string|null $route Route name or Controller::method
+     * @param non-empty-string|null $route Route name or Controllers::method
      */
     function redirect(?string $route = null): RedirectResponse
     {
@@ -953,7 +953,7 @@ if (! function_exists('route_to')) {
      * NOTE: This requires the controller/method to
      * have a route defined in the routes Config file.
      *
-     * @param string     $method    Route name or Controller::method
+     * @param string     $method    Route name or Controllers::method
      * @param int|string ...$params One or more parameters to be passed to the route.
      *                              The last parameter allows you to set the locale.
      *

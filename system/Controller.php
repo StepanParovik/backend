@@ -21,7 +21,7 @@ use Config\Validation;
 use Psr\Log\LoggerInterface;
 
 /**
- * Class Controller
+ * Class Controllers
  *
  * @see \CodeIgniter\ControllerTest
  */

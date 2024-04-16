@@ -51,9 +51,9 @@ return [
 
     // Page Not Found
     'pageNotFound'       => 'Page Not Found',
-    'emptyController'    => 'No Controller specified.',
-    'controllerNotFound' => 'Controller or its method is not found: {0}::{1}',
-    'methodNotFound'     => 'Controller method is not found: "{0}"',
+    'emptyController'    => 'No Controllers specified.',
+    'controllerNotFound' => 'Controllers or its method is not found: {0}::{1}',
+    'methodNotFound'     => 'Controllers method is not found: "{0}"',
     'localeNotSupported' => 'Locale is not supported: {0}',
 
     // CSRF

@@ -28,8 +28,8 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'postgres',
-        'password' => '1234',
-        'database' => 'fregat_db',
+        'password' => '1',
+        'database' => 'locale',
         'DBDriver' => 'Postgre',
         'port'     => 5432,
     ];
@@ -67,8 +67,8 @@ class Database extends Config
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that
         // we don't overwrite live data on accident.
-        if (ENVIRONMENT === 'testing') {
-            $this->defaultGroup = 'tests';
+        if (ENVIRONMENT === 'default') {
+            $this->defaultGroup = 'default';
         }
     }
 }

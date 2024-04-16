@@ -46,7 +46,7 @@ class RedirectResponse extends Response
      * Sets the URI to redirect to but as a reverse-routed or named route
      * instead of a raw URI.
      *
-     * @param string $route Route name or Controller::method
+     * @param string $route Route name or Controllers::method
      *
      * @return $this
      *

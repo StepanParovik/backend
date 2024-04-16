@@ -1140,15 +1140,15 @@ class RouteCollection implements RouteCollectionInterface
      *
      * If a route exists:
      *
-     *      'path/(:any)/(:any)' => 'Controller::method/$1/$2'
+     *      'path/(:any)/(:any)' => 'Controllers::method/$1/$2'
      *
-     * This method allows you to know the Controller and method
+     * This method allows you to know the Controllers and method
      * and get the route that leads to it.
      *
      *      // Equals 'path/$param1/$param2'
-     *      reverseRoute('Controller::method', $param1, $param2);
+     *      reverseRoute('Controllers::method', $param1, $param2);
      *
-     * @param string     $search    Route name or Controller::method
+     * @param string     $search    Route name or Controllers::method
      * @param int|string ...$params One or more parameters to be passed to the route.
      *                              The last parameter allows you to set the locale.
      *
@@ -1502,7 +1502,7 @@ class RouteCollection implements RouteCollectionInterface
                 $to        = trim($namespace, '\\') . '\\' . $to;
             }
             // Always ensure that we escape our namespace so we're not pointing to
-            // \CodeIgniter\Routes\Controller::method.
+            // \CodeIgniter\Routes\Controllers::method.
             $to = '\\' . ltrim($to, '\\');
         }
 
@@ -1769,7 +1769,7 @@ class RouteCollection implements RouteCollectionInterface
     /**
      * @param Closure|string $handler Handler
      *
-     * @return string|null Controller classname
+     * @return string|null Controllers classname
      */
     private function getControllerName($handler)
     {

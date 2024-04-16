@@ -106,14 +106,14 @@ class CodeIgniter
     protected $router;
 
     /**
-     * Controller to use.
+     * Controllers to use.
      *
      * @var (Closure(mixed...): ResponseInterface|string)|string|null
      */
     protected $controller;
 
     /**
-     * Controller method to invoke.
+     * Controllers method to invoke.
      *
      * @var string
      */
@@ -414,7 +414,7 @@ class CodeIgniter
     }
 
     /**
-     * Disables Controller Filters.
+     * Disables Controllers Filters.
      */
     public function disableFilters(): void
     {

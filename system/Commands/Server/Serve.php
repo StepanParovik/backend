@@ -97,7 +97,7 @@ class Serve extends BaseCommand
         CLI::write('CodeIgniter development server started on http://' . $host . ':' . $port, 'green');
         CLI::write('Press Control-C to stop.');
 
-        // Set the Front Controller path as Document Root.
+        // Set the Front Controllers path as Document Root.
         $docroot = escapeshellarg(FCPATH);
 
         // Mimic Apache's mod_rewrite functionality with user settings.

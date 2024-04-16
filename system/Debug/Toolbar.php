@@ -194,7 +194,7 @@ class Toolbar
             $isQuery     = isset($row['query']) && ! empty($row['query']);
 
             // Open controller timeline by default
-            $open = $row['name'] === 'Controller';
+            $open = $row['name'] === 'Controllers';
 
             if ($hasChildren || $isQuery) {
                 $output .= '<tr class="timeline-parent' . ($open ? ' timeline-parent-open' : '') . '" id="timeline-' . $styleCount . '_parent" onclick="ciDebugBar.toggleChildRows(\'timeline-' . $styleCount . '\');">';

@@ -162,15 +162,15 @@ interface RouteCollectionInterface
      *
      * If a route exists:
      *
-     *      'path/(:any)/(:any)' => 'Controller::method/$1/$2'
+     *      'path/(:any)/(:any)' => 'Controllers::method/$1/$2'
      *
-     * This method allows you to know the Controller and method
+     * This method allows you to know the Controllers and method
      * and get the route that leads to it.
      *
      *      // Equals 'path/$param1/$param2'
-     *      reverseRoute('Controller::method', $param1, $param2);
+     *      reverseRoute('Controllers::method', $param1, $param2);
      *
-     * @param string     $search    Named route or Controller::method
+     * @param string     $search    Named route or Controllers::method
      * @param int|string ...$params
      *
      * @return false|string The route (URI path relative to baseURL) or false if not found.

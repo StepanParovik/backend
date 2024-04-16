@@ -82,7 +82,7 @@ final class AutoRouterImproved implements AutoRouterInterface
     private array $segments = [];
 
     /**
-     * The position of the Controller in the URI segments.
+     * The position of the Controllers in the URI segments.
      * Null for the default controller.
      */
     private ?int $controllerPos = null;
@@ -247,7 +247,7 @@ final class AutoRouterImproved implements AutoRouterInterface
     {
         $httpVerb = strtolower($httpVerb);
 
-        // Reset Controller method params.
+        // Reset Controllers method params.
         $this->params = [];
 
         $defaultMethod = $httpVerb . ucfirst($this->defaultMethod);
@@ -266,7 +266,7 @@ final class AutoRouterImproved implements AutoRouterInterface
         }
 
         if ($this->searchFirstController()) {
-            // Controller is found.
+            // Controllers is found.
             $baseControllerName = class_basename($this->controller);
 
             // Prevent access to default controller path
@@ -278,10 +278,10 @@ final class AutoRouterImproved implements AutoRouterInterface
                 );
             }
         } elseif ($this->searchLastDefaultController()) {
-            // The default Controller is found.
+            // The default Controllers is found.
             $baseControllerName = class_basename($this->controller);
         } else {
-            // No Controller is found.
+            // No Controllers is found.
             throw new PageNotFoundException('No controller is found for: ' . $uri);
         }
 
@@ -401,7 +401,7 @@ final class AutoRouterImproved implements AutoRouterInterface
 
             if ($routeLowerCase === $controller) {
                 throw new PageNotFoundException(
-                    'Cannot access the controller in Defined Routes. Controller: ' . $controllerInRoutes
+                    'Cannot access the controller in Defined Routes. Controllers: ' . $controllerInRoutes
                 );
             }
         }
@@ -443,7 +443,7 @@ final class AutoRouterImproved implements AutoRouterInterface
 
             throw new PageNotFoundException(
                 'AutoRouterImproved does not support `_remap()` method.'
-                . ' Controller:' . $this->controller
+                . ' Controllers:' . $this->controller
             );
         } catch (ReflectionException $e) {
             // Do nothing.

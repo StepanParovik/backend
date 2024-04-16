@@ -23,7 +23,7 @@ use Psr\Log\LoggerInterface;
 use Throwable;
 
 /**
- * Controller Test Trait
+ * Controllers Test Trait
  *
  * Provides features that make testing controllers simple and fluent.
  *
@@ -39,7 +39,7 @@ use Throwable;
 trait ControllerTestTrait
 {
     /**
-     * Controller configuration.
+     * Controllers configuration.
      *
      * @var App
      */
@@ -132,7 +132,7 @@ trait ControllerTestTrait
     public function controller(string $name)
     {
         if (! class_exists($name)) {
-            throw new InvalidArgumentException('Invalid Controller: ' . $name);
+            throw new InvalidArgumentException('Invalid Controllers: ' . $name);
         }
 
         $this->controller = new $name();

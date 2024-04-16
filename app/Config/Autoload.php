@@ -54,6 +54,7 @@ class Autoload extends AutoloadConfig
         'Modules\Rubricators' => ROOTPATH . 'modules\Rubricators',
         'Modules\Small_business' => ROOTPATH . 'modules\Small_business',
         'Modules\Excel' => ROOTPATH . 'modules\Excel',
+        'Modules\Main' => ROOTPATH . 'modules\Main'
     ];
 
     /**

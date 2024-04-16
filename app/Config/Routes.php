@@ -45,3 +45,6 @@ $routes->group('small_business', ['namespace' => 'Modules\Small_business\Control
 $routes->group('templates', ['namespace' => 'Modules\Templetes\Controllers'], function ($routes) {
     $routes->get('/loading', 'Index::loading');
 });
+$routes->group('main', ['namespace' => 'Modules\Main\Controllers'], function ($routes) {
+    $routes->get('/', 'MainController::index');
+});

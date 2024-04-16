@@ -471,7 +471,7 @@ if (! function_exists('url_to')) {
      * NOTE: This requires the controller/method to
      * have a route defined in the routes Config file.
      *
-     * @param string     $controller Route name or Controller::method
+     * @param string     $controller Route name or Controllers::method
      * @param int|string ...$args    One or more parameters to be passed to the route.
      *                               The last parameter allows you to set the locale.
      *

@@ -20,7 +20,7 @@ return [
             'cell'       => 'Cell class name',
             'command'    => 'Command class name',
             'config'     => 'Config class name',
-            'controller' => 'Controller class name',
+            'controller' => 'Controllers class name',
             'default'    => 'Class name',
             'entity'     => 'Entity class name',
             'filter'     => 'Filter class name',

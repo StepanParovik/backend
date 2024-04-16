@@ -620,7 +620,7 @@ class Services extends BaseService
 
     /**
      * The Router class uses a RouteCollection's array of routes, and determines
-     * the correct Controller and Method to execute.
+     * the correct Controllers and Method to execute.
      *
      * @return Router
      */

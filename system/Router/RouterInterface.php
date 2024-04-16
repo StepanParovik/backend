@@ -29,14 +29,14 @@ interface RouterInterface
      *
      * @param string|null $uri URI path relative to baseURL
      *
-     * @return Closure|string Controller classname or Closure
+     * @return Closure|string Controllers classname or Closure
      */
     public function handle(?string $uri = null);
 
     /**
      * Returns the name of the matched controller.
      *
-     * @return Closure|string Controller classname or Closure
+     * @return Closure|string Controllers classname or Closure
      */
     public function controllerName();
 
