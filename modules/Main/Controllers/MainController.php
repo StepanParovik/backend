@@ -17,8 +17,8 @@ class MainController  extends BaseController{
      * Получение базовых настроек приложения
      * @return array
      */
-    public function index(): array
+    public function index()
     {
-        return  lang('ru');
+        return  lang('main.main');
     }
 }

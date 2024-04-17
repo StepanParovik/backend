@@ -6,8 +6,12 @@ use CodeIgniter\Database\Migration;
 
 class CreateUsersTable extends Migration
 {
+    public string $table = 'users';
+
     public function up()
     {
+        $this->db->transStart();
+
         $this->forge->addField([
             'id' => [
                 'type' => 'uuid',
@@ -41,10 +45,22 @@ class CreateUsersTable extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('users');
+        $this->forge->createTable($this->table);
 
-        $DEFAULT_sql = "ALTER TABLE users ALTER COLUMN id SET DEFAULT uuid_generate_v4();";
-        $this->db->query($DEFAULT_sql);
+        // добавление значений по умолчанию
+        $defaults = [
+            'id' => 'uuid_generate_v4()',
+            'create_date' => 'CURRENT_TIMESTAMP',
+            'update_date' => 'CURRENT_TIMESTAMP'
+            ];
+        $sql = '';
+
+        foreach($defaults as $column => $value){
+            $sql .= "ALTER TABLE $this->table ALTER COLUMN $column SET DEFAULT $value;";
+            $this->db->query($sql);
+        }
+
+        $this->db-> transComplete();
     }
 
     public function down()
