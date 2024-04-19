@@ -21,15 +21,22 @@ class Auth extends Controller{
         echo view('Modules\Auth\Views\auth');
     }
 
+
     /**
+     *
      * Вход в систему
-     * @return \CodeIgniter\HTTP\RedirectResponse
+     * @param array $formData [
+     *  string login;
+     *  string password
+     * ]
+     * @return bool
      */
-    public function loginAuth(){
+    public function loginAuth(array $formData): bool
+    {
         $session = session();
         $M_user = new M_user;
-        $login = $this->request->getVar('login');
-        $password = $this->request->getVar('password');
+        $login = $formData['login'];
+        $password = $formData['password'];
 
         $data = $M_user->where('login', $login)->first();
         if($data){
@@ -44,17 +51,18 @@ class Auth extends Controller{
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/user');
+                return true;
             }else{
                 $session->setFlashdata('msg','Не верный пароль');
-                return redirect()->to('auth');
+                return false;
             }
         }else{
             $session->setFlashdata('msg','Не верный логин');
-            return redirect()->to('auth');
+            return false;
         }
     }
-    public function logout(){
+    public function logout()
+    {
         $session = session();
         $session->destroy();
         return redirect()->to('/');

@@ -13,7 +13,7 @@ $routes->group('', ['namespace' => 'Modules\Auth\Controllers'], function ($route
 $routes->group('auth', ['namespace' => 'Modules\Auth\Controllers'], function ($routes) {
     $routes->get('/', 'Auth::index');
     $routes->get('logout', 'Auth::logout');
-    $routes->post('login', 'Auth::index');
+    $routes->match(['get', 'post'],'login', 'Auth::loginAuth');
     $routes->match(['get', 'post'], 'loginAuth', 'Auth::loginAuth');
 });
 $routes->group('user', ['namespace' => 'Modules\User\Controllers'], function ($routes) {
