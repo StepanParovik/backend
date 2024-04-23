@@ -33,6 +33,8 @@ class Auth extends Controller{
      */
     public function loginAuth(array $formData): bool
     {
+        return 'Жопа';
+        var_dump('четко');
         $session = session();
         $M_user = new M_user;
         $login = $formData['login'];
