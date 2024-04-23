@@ -2,6 +2,7 @@
 namespace Modules\Auth\Controllers;
 use CodeIgniter\Controller;
 use Modules\User\models\M_user;
+use CodeIgniter\API\ResponseTrait;
 
 
 /**
@@ -11,6 +12,7 @@ use Modules\User\models\M_user;
  * @copyright (C) 2023 Parovik S.A.
  */
 class Auth extends Controller{
+    use ResponseTrait;
     /**
      * Отображение страницы авторизации
      * @return void
@@ -31,10 +33,12 @@ class Auth extends Controller{
      * ]
      * @return bool
      */
-    public function loginAuth(array $formData): bool
+    public function loginAuth(): bool
     {
-        return 'Жопа';
-        var_dump('четко');
+        $data = $this->request->getJSON();
+        var_dump($data);
+        return $data;
+        var_dump($data);
         $session = session();
         $M_user = new M_user;
         $login = $formData['login'];
